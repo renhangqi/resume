@@ -151,18 +151,16 @@ a{
   background: #E6686A;
   text-align: center;
 }
-/*.madia a  {
-  width: 30px;
-  height: 30px;
-  fill: white;
-  vertical-align: top;
-}*/
+.media a:hover {
+  width: 40px;
+  border-radius: 50%;
+  background-color: #CF5D5F;
+}
 .media a {
     display: inline-block;
     width: 40px;
     line-height: 30px;
     padding: 5px 0;
-    border-radius: 50%;
     margin: 16px;
     color: white;
     font-size: 30px;
