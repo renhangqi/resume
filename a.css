@@ -9,6 +9,13 @@ a{
   text-decoration: none;
   color: inherit;
 }
+ul,
+ol {
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
 .clearfix::after{
   content: '';
   display: block;
@@ -166,3 +173,136 @@ a{
     font-size: 30px;
 }
 
+/*下载pdf简历*/
+main .button {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 21px 55px;
+  border: 1px solid #cdcfd1;
+  background: #efefef;
+  display:inline-block;
+  border-radius: 2px;
+  color: #3d4451;
+  font-weight: bold;
+  margin: 32px 0;
+  transition:box-shadow 0.2s;
+}
+main .button:hover {
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, .2)
+}
+.button-wrap {
+  text-align: center;
+}
+.selfintro {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: kai;
+  line-height: 1.8;
+  font-size: 18px;
+}
+.skill,
+.works{
+  max-width: 940px;
+  margin:60px auto 0;
+}
+.skill > h2 ,
+.works > h2 {
+  text-align: center;
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.skill h3 {
+  font-size: 14px;
+  line-height: 1.1;
+  padding-right: 40px;
+}
+.skill > ol {
+  background: white;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  padding: 42px 50px 10px;
+  margin-top: 30px;
+}
+.skill > ol > li {
+  float: left;
+  width: 48%;
+  box-sizing: border-box;
+}
+.skill > ol > li:nth-child(even) {
+  float: right;
+}
+.skill .progressBar {
+  height: 5px;
+  background: #FAE1E1;
+  border-radius: 2px;
+  margin: 4px 0 40px;
+}
+.skill .progressBar > .progress {
+  height: 100%;
+  background: #E6686A;
+  border-radius: 2px;
+}
+section.works {
+  text-align: center;
+  margin-bottom: 100px;
+}
+section.works > nav{
+  text-align: center;
+}
+section.works ol{
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+}
+section.works li{
+  float: left;
+  margin-left: 40px;
+  cursor: pointer;
+}
+section.works li:first-child{
+  margin-left: 0;
+}
+section.works > nav{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 32px;
+}
+section.works > nav .bar{
+  height: 5px;
+  background: white;
+  margin-top: 5px;
+  margin-bottom: 28px;
+  border-radius: 2px;
+}
+section.works > nav .bar-inner{
+  height: 100%;
+  background: #E6686A;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+section.works > nav .worksbar1 .bar-inner{
+  margin-left: 0;
+  width: 50px;
+}
+section.works > nav .worksbar2 .bar-inner{
+  margin-left: 65px;
+  width: 50px;
+}
+section.works > nav .worksbar3 .bar-inner{
+  margin-left: 140px;
+  width: 96px;
+}
+section.works .pic{
+  position: relative;
+  height: 597px;
+}
+section.works .pic > .big,
+section.works .pic > .small {
+  position: absolute;
+}
+.works .pic img {
+  vertical-align: top;
+}
